@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.Versioning;
 
 namespace Midnight
 {
     #region Description problem
+
+    // Link: https://www.testdome.com/questions/c-sharp/account/32673?visibility=3&skillId=18
 
     // Level: Hard
 
@@ -23,36 +23,14 @@ namespace Midnight
         [Flags]
         public enum Access
         {
-            Delete,
-            Publish,
-            Submit,
-            Comment,
-            Modify,
-            Writer,
-            Editor,
-            Owner
-        }
-    }
-
-    public static class ExtensionMethods
-    {
-        public static bool HasFlag(this Account.Access access, Account.Access flag)
-        {
-            //var access = this.MemberwiseClone() as Account.Access?;
-
-            //if (access == null)
-            //    return false;
-
-            return false;
-
-            if (access == Account.Access.Owner)
-                return true;
-            else if (access == Account.Access.Writer)
-                return (flag == Account.Access.Submit || flag == Account.Access.Modify);
-            else if (access == Account.Access.Editor)
-                return (flag == Account.Access.Delete || flag == Account.Access.Publish || flag == Account.Access.Comment);
-            else
-                return access == flag;
+            Delete = 1,
+            Publish = 2,
+            Submit = 4,
+            Comment = 8,
+            Modify = 16,
+            Writer = Submit | Modify,
+            Editor = Delete | Publish | Comment,
+            Owner = Writer | Editor
         }
     }
 }

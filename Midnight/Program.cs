@@ -7,9 +7,10 @@ namespace Midnight
     {
         public static void Main(string[] args)
         {
-            // Account
-            //Console.WriteLine(Access.Writer.HasFlag(Access.Delete)); //Should print: "False"
-            Console.WriteLine(Access.Writer.HasFlag(Access.Delete));
+            // Account example
+            Console.WriteLine(Access.Writer.HasFlag(Access.Delete)); //Should print: "False"
+
+
         }
     }
 }
