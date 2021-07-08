@@ -10,7 +10,10 @@ namespace Midnight
             // Account example
             Console.WriteLine(Access.Writer.HasFlag(Access.Delete)); //Should print: "False"
 
-
+            // AlertService example
+            var alertService = new AlertService(new AlertDAO());
+            var result = alertService.RaiseAlert();
+            Console.WriteLine(result.GetType()); //Should print: "True" 
         }
     }
 }
