@@ -18,7 +18,7 @@ namespace Midnight
 
     #endregion
 
-    public class Account
+    public static class Account
     {
         [Flags]
         public enum Access

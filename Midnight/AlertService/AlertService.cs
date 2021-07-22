@@ -6,6 +6,10 @@ namespace Midnight
     {
         #region Description problem
 
+        // Link: https://www.testdome.com/questions/c-sharp/alert-service/35479?visibility=3&skillId=18
+
+        // Level: Easy
+
         //Refactor the AlertService and AlertDAO classes:
 
         //Create a new interface, named IAlertDAO, that contains the same methods as AlertDAO.
