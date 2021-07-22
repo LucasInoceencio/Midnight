@@ -18,8 +18,4 @@
     <ProjectReference Include="..\Midnight\Midnight.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UserInput\" />
-  </ItemGroup>
-
 </Project>

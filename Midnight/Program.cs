@@ -22,11 +22,17 @@ namespace Midnight
             // Song example
             Song first = new Song("Hello");
             Song second = new Song("Eye of the tiger");
-
             first.NextSong = second;
             second.NextSong = first;
-
             Console.WriteLine(first.IsRepeatingPlaylist());
+
+            // User input example
+            TextInput input = new NumericInput();
+            input.Add('1');
+            input.Add('a');
+            input.Add('0');
+            Console.WriteLine(input.GetValue()); // Should printi 10
+
         }
     }
 }
