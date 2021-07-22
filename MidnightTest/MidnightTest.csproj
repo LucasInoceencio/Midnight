@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="UserInput\" />
-    <Folder Include="Song\" />
   </ItemGroup>
 
 </Project>
