@@ -33,6 +33,19 @@ namespace Midnight
             input.Add('0');
             Console.WriteLine(input.GetValue()); // Should printi 10
 
+
+            // Folders
+            string xml =
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
+            "<folder name=\"c\">" +
+                "<folder name=\"program files\">" +
+                    "<folder name=\"uninstall information\" />" +
+                "</folder>" +
+                "<folder name=\"users\" />" +
+            "</folder>";
+
+            foreach (string name in Folders.FolderNames(xml, 'u'))
+                Console.WriteLine(name);
         }
     }
 }

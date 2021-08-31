@@ -1,5 +1,4 @@
 ﻿using Xunit;
-using Midnight;
 using FluentAssertions;
 
 namespace MidnightTest
