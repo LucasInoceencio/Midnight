@@ -54,6 +54,11 @@ namespace Midnight
             Node n2 = new Node(2, n1, n3);
 
             Console.WriteLine(BinarySearchTree.Contains(n2, 3));
+
+
+            // Quadratic Equation
+            Tuple<double, double> roots = QuadraticEquation.FindRoots(2, 10, 8);
+            Console.WriteLine("Roots: " + roots.Item1 + ", " + roots.Item2);
         }
     }
 }
