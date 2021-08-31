@@ -48,17 +48,22 @@ namespace Midnight
                 Console.WriteLine(name);
 
             // Binary Search Tree
-
             Node n1 = new Node(1, null, null);
             Node n3 = new Node(3, null, null);
             Node n2 = new Node(2, n1, n3);
 
             Console.WriteLine(BinarySearchTree.Contains(n2, 3));
 
-
             // Quadratic Equation
             Tuple<double, double> roots = QuadraticEquation.FindRoots(2, 10, 8);
             Console.WriteLine("Roots: " + roots.Item1 + ", " + roots.Item2);
+
+            // Bank Account
+            var bankAccount = new BankAccount(150);
+            bankAccount.Deposit(100);
+            bankAccount.Withdraw(50);
+            Console.WriteLine($"Balance: {bankAccount.Balance}"); // Should print 50
+
         }
     }
 }
