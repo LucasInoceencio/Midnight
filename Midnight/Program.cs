@@ -46,6 +46,14 @@ namespace Midnight
 
             foreach (string name in Folders.FolderNames(xml, 'u'))
                 Console.WriteLine(name);
+
+            // Binary Search Tree
+
+            Node n1 = new Node(1, null, null);
+            Node n3 = new Node(3, null, null);
+            Node n2 = new Node(2, n1, n3);
+
+            Console.WriteLine(BinarySearchTree.Contains(n2, 3));
         }
     }
 }
